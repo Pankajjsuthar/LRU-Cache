@@ -16,3 +16,4 @@ So to solve this problem servers have two type of memory :-
 
 **2. Disk Storage**
 
+<img src="serverlol.jpeg" width = "70%">
