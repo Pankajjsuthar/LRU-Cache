@@ -23,5 +23,46 @@ Now let there are 1000 requests 😧 and generally most of them are frequent lik
 Hence it saves a lot of time to us and saves a lot of energy of fetching details from main disk storage..:smiley:
 
 Now this LRU cache has a capacity of storing data...and let's understand the process with a flow diagram :blush:
+<br>
+<br>
+<br>
 
 
+
+:star2:**Case 1** : Cache doesn't have data about request from client.
+
+So it will ask main disk storage and while returning from disk it will also save the same data in cache memory and return to client. See diagram below :relaxed:
+
+<img src = "case1.jpeg" width ="50%">
+
+<br>
+<br>
+<br>
+:star2:**Case 2** : Requested item is in cache memory.
+
+It's easy as the request will be fulfilled from the cache memory and disk storage is untouched
+
+<img src = "case2.jpeg" width ="50%">
+
+<br>
+<br>
+<br>
+
+:star2: **Case 3** : Cache storage is full.
+
+Now in this situation it will delete the least recently used item in the cache memory and fulfills the client request.
+
+<img src="case3.jpeg" width = "50%">
+
+<br>
+<br>
+<br>
+<br>
+
+This whole idea is implemented by me in C++ code using **Linked List** and **Hashmaps** with 3 functions.
+
+```
+insertkeyvalue(key,value)
+getvalue(key)
+mostrecentkey()
+```
