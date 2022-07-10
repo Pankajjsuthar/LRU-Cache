@@ -17,3 +17,11 @@ So to solve this problem servers have two type of memory :-
 **2. Disk Storage**
 
 <img src="serverlol.jpeg" width = "70%">
+
+Now let there are 1000 requests 😧 and generally most of them are frequent like "open youtube" or "open github". and some are very rare requests like
+"*send me 100 billion $*"... So our cache memory stores the requests which are most frequent and returns the request without disturbing the disk storage.
+Hence it saves a lot of time to us and saves a lot of energy of fetching details from main disk storage..:smiley:
+
+Now this LRU cache has a capacity of storing data...and let's understand the process with a flow diagram :blush:
+
+
